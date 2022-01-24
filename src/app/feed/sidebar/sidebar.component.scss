@@ -1,0 +1,32 @@
+.smallfont {
+    font-size:13px;
+  }
+
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #DFDFDF;
+}
+
+.side-button {
+  background: linear-gradient(90deg, rgba(17,134,224,1) 0%, rgba(9,94,181,1) 100%);
+  border: 1px outset transparent;
+  color: white;
+  width: 100%;
+  padding: 3px 0px 3px 0px;
+  font-size: 14px;
+  border-radius: 0.8rem;
+}
+
+.side-button:hover {
+  background: white;
+  border: 1px solid rgba(9,94,181,1);
+  color: rgba(9,94,181,1);
+}
+
+.info-button {
+  background: #FAFBFC;
+}
+
+.logout {
+  padding: 2px 10px 2px 10px;
+}

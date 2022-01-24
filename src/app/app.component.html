@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md sticky-top navbar-light">
+  <div class="container">
+  <a href="/feed">
+    <img src="../assets/icon2.png" width="20" alt="logo-image" class="ml-2 mr-2">
+    <img src="../assets/logo.jpg" width="90" alt="logo-text">
+  </a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse ml-auto" id="navbarCollapse">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-link" routerLink="feed">
+          <button type="button" class="btn-light btn btn-sm smallFont">Newsfeed</button>
+        </a>
+        <a class="nav-link color-me" routerLink="members">
+          <button type="button" class="btn-light btn btn-sm">Members</button>
+        </a>
+        <a class="nav-link color-me" routerLink="profil">
+          <button type="button" class="btn-light btn btn-sm">Profil</button>
+        </a>
+      </div>
+  </div>
+</div>
+</nav>
+
+<main class="container mt-3" role="main">
+  <router-outlet></router-outlet>
+</main>

@@ -1,0 +1,29 @@
+<div class="container login-container">
+    <div class="row">
+        <div class="col-md-6 login-form-1">
+            <h4>Hello, <b>friend</b>. <i class="fa hand-paper"></i></h4>
+            <div class="welcome-text mt-5">
+                Welcome to Tweety! We are a small social media platform for exchanging toughts with people all over the world!
+                <br /><br />
+                Join our community and create your own profil. Share posts, vote posts and create a virtual person of yourself.
+                <br /><br /><br />
+                <b>Feel free to share your toughts with us!</b>
+            </div>
+        </div>
+        <div class="col-md-6 login-form-2">
+            <h3>Login</h3>
+            <form (submit)="$event.preventDefault(); loginUser(email.value, password.value)">  
+                <div class="form-group">
+                    <input type="text" required minlength="6" class="form-control" placeholder="E-Mail" value="" id="email" #email />
+                </div>
+                <div class="form-group">
+                    <input type="password" required minlength="6" class="form-control" placeholder="Password" value="" id="password" #password />
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" value="Login" />
+                </div>
+                <a href="/register"><i class="fa fa-user mr-2"></i>Need an account?</a>
+            </form>
+        </div>
+    </div>
+</div>

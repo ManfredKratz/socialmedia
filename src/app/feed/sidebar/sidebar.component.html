@@ -1,0 +1,60 @@
+<!-- 
+    User Account Information
+    + Link to profile and logout function
+-->
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex align-items-center">
+            <img class="rounded-circle" width="55" src="https://picsum.photos/50/50" alt="Avatar" routerLink="/profil">
+            <div class="ml-3">
+                <h6 routerLink="/profil"><b>{{userdata.firstname}} {{userdata.lastname}}</b></h6>
+                <div class="text-muted small">{{userdata.email}}</div>
+            </div>
+            
+        </div>
+        <div class="smallfont mt-4">
+            <button class="btn btn-sm info-button mr-1" *ngFor="let followers of followdata">
+               <b>{{followers.follower}}</b>
+                <div class="text-muted smallfont">Followers </div>
+            </button>
+            <button class="btn btn-sm info-button mr-1" *ngFor="let followers of followdata">
+                <b>{{followers.follows}}</b>
+                <div class="text-muted smallfont">Following </div>
+            </button>
+            <button type="button" class="btn btn-sm info-button" (click)="logout()"  routerLink="/login">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <div class="text-muted smallfont">Logout </div>
+            </button>
+        </div>
+        <div class="d-flex">
+            <button type="button" class="btn btn-light btn-sm mt-4 side-button" routerLink="/profil"><i
+                    class="fa fa-user-circle mr-2" aria-hidden="true"></i>Profil</button>
+        </div>
+    </div>
+</div>
+<!-- 
+    Who is Online? - List
+    Give's out all connected members. @socket: 'who is online'
+-->
+<div class="card smallfont">
+    <div class="card-body">
+        <h5>Who's online?</h5>
+        <p class="text-muted">All currently logged in members:</p>
+        <ul class="list-group list-group-flush" style="list-style-type: none;" *ngFor="let online of onlinelist">
+            <li class="ml-2"><i class="fa fa-circle mr-2" style="color: green;" aria-hidden="true"></i>
+                {{online.firstname}} {{online.lastname}}</li>
+        </ul>
+        <button type="button" class="btn btn-dark btn-sm side-button mt-4" routerLink="/members"><i
+                class="fa fa-address-book mr-2" aria-hidden="true"></i>See all members</button>
+    </div>
+</div>
+<!-- 
+    Impress and Copyright-Information 
+    Placeholders - Fake it till you make it
+-->
+<div class="card smallfont">
+    <div class="card-body">
+        <div class="text-muted">Data Security · Impress</div>
+        Tweety © 2020
+    </div>
+</div>

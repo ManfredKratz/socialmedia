@@ -1,0 +1,24 @@
+<div class="d-flex">
+    <form (submit)="$event.preventDefault(); voteup(up)">
+        <button type="submit" class="btn btn-sm btn-default mr-1" id="up" #up>
+            <span *ngIf="VotedUp === true" style="color: #107FD9">
+                <i class="fa fa-caret-up " aria-hidden="true"></i>
+            </span>
+            <span *ngIf="VotedUp === false" style="color: black">
+                <i class="fa fa-caret-up " aria-hidden="true"></i>
+            </span>
+        </button>
+    </form>
+    <div class="ml-auto"><button class="btn btn-sm btn-disabled btn-light">{{votes}}<br></button></div>
+
+    <form (submit)="$event.preventDefault(); votedown(down)">
+        <button type="submit" class="btn btn-sm btn-default ml-1" id="down" #down>
+            <span *ngIf="VotedDown === true" style="color: #107FD9">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </span>
+            <span *ngIf="VotedDown === false" style="color: black">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </span>
+        </button>
+    </form>
+</div>

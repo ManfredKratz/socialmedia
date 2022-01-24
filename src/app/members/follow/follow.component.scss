@@ -1,0 +1,19 @@
+.follow-button {
+    background: linear-gradient(90deg, rgba(17,134,224,1) 0%, rgba(9,94,181,1) 100%);
+    border: none;
+    color: white;
+    width: 120px;
+    padding: 4px 0px 4px 0px;
+    font-size: 14px;
+    border-radius: 0.8rem;
+  }
+
+  .follow-button:hover {
+    background: white;
+    border: 1px solid rgba(9,94,181,1);
+    color: rgba(9,94,181,1);
+  }
+
+.smallfont {
+    font-size: 12px;
+}

@@ -1,0 +1,13 @@
+<form (submit)="$event.preventDefault(); followUser()">
+    <span *ngIf="selectedMember.user_follow === false">
+        <button type="submit" id="follow" class="btn btn-sm follow-button" #follow>
+            <i class="fa fa-user-plus mr-2" aria-hidden="true"></i>
+            Follow
+        </button>
+    </span>
+    <span *ngIf="selectedMember.user_follow === true">
+        <button type="submit" id="follow" class="btn btn-sm follow-button" #follow>
+            Unfollow
+        </button>
+    </span>
+</form>

@@ -1,0 +1,46 @@
+.smallfont {
+    font-size:14px;
+  }
+
+  .spacing {
+      padding: 20px;
+  }
+
+.card {
+    border: 1px solid #DFDFDF;
+    margin-bottom: 20px;
+}
+
+.button-1 {
+  background: linear-gradient(90deg, rgba(17,134,224,1) 0%, rgba(9,94,181,1) 100%);
+  border: none;
+  padding: 2px 20px 2px 20px;
+  font-size: 14px;
+  border-radius: 0.8rem;
+  margin-left: auto;
+}
+.button-1:hover {
+  background: white;
+  color: rgba(9,94,181,1);
+  border: 1px solid rgba(9,94,181,1);
+}
+
+
+  textarea{
+    border: none;
+    background: #fff;
+    height: 70px;
+    resize: none;
+    outline: none;
+    white-space: pre-wrap;
+overflow-wrap: break-word;
+  }
+
+  /////////////////////////////////////////////////////////
+  body {
+    background-color: #eeeeee;
+}
+
+.h7 {
+    font-size: 0.8rem;
+}

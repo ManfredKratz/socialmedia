@@ -1,0 +1,117 @@
+html *{
+    -webkit-font-smoothing: antialiased;
+}
+
+.profile-page .page-header {
+    height: 125px;
+    background-position:center;
+    border-radius: 4px 4px 0px 0px;
+}
+
+
+.main-raised {
+    margin: -60px 30px 0;
+    border-radius: 6px;
+}
+
+.main {
+    background: #FFF;
+    position: relative;
+    z-index: 3;
+    border: 1px solid #D3D3D3;
+}
+
+.profile-page .profile {
+    text-align: center;
+}
+
+.profile-page .profile img {
+    max-width: 160px;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-transform: translate3d(0,-50%,0);
+    -moz-transform: translate3d(0,-50%,0);
+    -o-transform: translate3d(0,-50%,0);
+    -ms-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+}
+
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+.img-fluid, .img-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+    font-weight: 700;
+}
+
+.profile-page .description {
+    margin: 1.071rem auto 0;
+    max-width: 600px;
+    color: #999;
+    font-weight: 300;
+}
+
+p {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.profile-page .profile-tabs {
+    margin-top: 4.284rem;
+}
+
+
+
+.profile-page .profile .name{
+    margin-top: -80px;
+}
+
+img.rounded {
+    border-radius: 6px!important;
+}
+
+/* footer */
+
+
+.btn {
+    background: #FAFAFA;
+    margin: 5px;
+    font-size: 14px;
+    border: 0 none;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0747A6;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #0747A6;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #0747A6;
+    box-shadow: none;
+}
+
+.follow-button {
+    border-radius: 0.5rem;
+    background-color: #F3F3F3;
+}
+
+.smallfont {
+    font-size: 12px;
+}

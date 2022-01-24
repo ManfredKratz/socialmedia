@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-body">
+        <div class="text-muted">Check out our members! Would you like to follow some?</div>
+        <hr>
+        <div class="col-md-12">
+        <div class="card" style="border:none;" *ngFor="let member of members$ | async">
+            <div class="d-flex align-items-center">
+                <img class="rounded-circle" width="55" src="../../../assets/default-avatar.png" alt="Avatar">
+            <div class="ml-3">
+                <h6><b>{{member.firstname}} {{member.lastname}}</b></h6>
+              <div class="text-muted small">
+                  {{member.user}}
+              </div>
+            </div>
+            <hr>
+            <button class="btn btn-sm btn-light mr-2">
+                {{member.follower}}
+                <div class="text-muted smallfont">Followers </div>
+            </button>
+            <button class="btn btn-sm btn-light mr-5">
+                {{member.follows}}
+                <div class="text-muted smallfont">Following </div>
+            </button>
+            <app-follow [selectedMember]="member"></app-follow>
+        </div>
+        <hr>
+    </div>
+    </div>
+</div>

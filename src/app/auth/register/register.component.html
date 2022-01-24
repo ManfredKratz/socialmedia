@@ -1,0 +1,35 @@
+<div class="container login-container">
+    <div class="row">
+        <div class="col-md-6 login-form-1">
+            <h4><i  class="fa fa-user-plus fa-xs mr-2"> </i>Register</h4>
+            <div class="errorMsg">{{errorMsg}}</div>
+            <form (submit)="$event.preventDefault(); addUser(firstname.value, lastname.value, email.value, password.value)">  
+                <div class="form-group">
+                    <input type="text" required minlength="3" class="form-control" placeholder="Firstname" value="" id="firstname" #firstname/>
+                </div>
+                <div class="form-group">
+                    <input type="text" required minlength="3" class="form-control" placeholder="Lastname" value="" id="lastname" #lastname/>
+                </div>
+                <div class="form-group">
+                    <input type="text" required minlength="6" class="form-control" placeholder="Email" value="" id="email" #email/>
+                </div>
+                <div class="form-group">
+                    <input type="password" required minlength="6" class="form-control" placeholder="Password" value="" id="password" #password/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btnSubmit" value="Register" path="login" />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6 login-form-2">
+            <h4>Welcome, <b>friend</b>! <i class="fa hand-paper"></i></h4>
+            <div class="welcome-text mt-5">
+                Tweety is a small social media platform for exchanging toughts with people all over the world!
+                <br /><br />
+                Join our community and create your own profil. Share posts, vote posts and create a virtual person of yourself.
+                <br /><br /><br />
+                <b>Feel free to share your toughts with us!</b>
+            </div>
+        </div>
+    </div>
+</div>
